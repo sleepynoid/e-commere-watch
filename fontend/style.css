@@ -1,0 +1,108 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;     /* Center the content vertically */
+    flex-wrap: wrap;         /* Allow wrapping for smaller screens */
+}
+
+.brand {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 20px;
+    /* margin-right: auto;      Push brand to the left */
+}
+
+.menu {
+    display: flex;
+    gap: 140px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+.header-brand {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;     /* Center the content vertically */
+    /* flex-wrap: wrap;  */
+}
+.home-subheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-weight: bold;
+}
+.ima {
+    width: 400px;
+    height: 300px;
+}
+.mainHome {
+    display: flex;
+    justify-content: center;
+}
