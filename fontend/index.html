@@ -3,85 +3,114 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1 Design</title>
     <link rel="stylesheet" href="style.css">
-    <title>Vite App</title>
-    <div class="header-brand">
-        <a href="#" class="brand">LuxeTime</a>
-    </div>
 </head>
+
 <body>
-    <!-- <div id="app"></div> -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="menu">
-                <a href="#home" class="nav-link">New & Now</a>
-                <a href="#about" class="nav-link">Women</a>
-                <a href="#services" class="nav-link">Kid</a>
-                <a href="#contact" class="nav-link">Type</a>
+    <main class="main">
+        <header class="luxetime">
+            <a href="#" class="luxetime__brand">LuxeTime</a>
+            <nav class="navbar">
+                <div class="navbar__container">
+                    <div class="navbar__menu">
+                        <a href="#home" class="navbar__link">New & Now</a>
+                        <a href="#women" class="navbar__link">Women</a>
+                        <a href="#kids" class="navbar__link">Kids</a>
+                        <a href="#type" class="navbar__link">Type</a>
+                    </div>
+                    <div class="navbar__toggle" onclick="toggleMenu()">
+                        <span class="navbar__toggle-bar"></span>
+                        <span class="navbar__toggle-bar"></span>
+                        <span class="navbar__toggle-bar"></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="content-1">
+            <div class="content-1__card">
+                <img src="src/asset/IMG_7751.JPG" alt="pika" class="content-1__card-image">
+                <h1 class="content-1__card-title">WATCH SEASON</h1>
+                <button class="content-1__card-button">SHOP NOW</button>
             </div>
-            <div class="menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <section class="mainHome">
-            <img class="img" src="src/asset/IMG_7751.JPG" alt="pika">
         </section>
-        <section id="home" class="home-section">
-            <div class="home-subheader">
-                <h1>What to wear where</h1>
-            <div class="card">
-                <div>
-                    <img class="card ima" src="src/asset/IMG_7751.JPG" alt="pikacu face">
-                    <p>Sport</p>
+        <section class="content-2">
+            <h1 class="content-2__title">What To Wear Where</h1>
+            <div class="content-2__card-group">
+                <div class="content-2__card">
+                    <img src="src/asset/IMG_7751.JPG" alt="pikacu face" class="content-2__card-image">
+                    <p class="content-2__card-text">Sport</p>
                 </div>
-                <div>
-                    <img class="ima" src="src/asset/IMG_7751.JPG" alt="pikacu face">
-                    <p>Formal</p>
+                <div class="content-2__card">
+                    <img src="src/asset/IMG_7751.JPG" alt="pikacu face" class="content-2__card-image">
+                    <p class="content-2__card-text">Casual</p>
                 </div>
-                <div>
-                    <img class="ima" src="src/asset/IMG_7751.JPG" alt="pikacu face">
-                    <p>Casual</p>
+                <div class="content-2__card">
+                    <img src="src/asset/IMG_7751.JPG" alt="pikacu face" class="content-2__card-image">
+                    <p class="content-2__card-text">Formal</p>
                 </div>
-                
             </div>
+        </section>
+        <section class="content-3" aria-labelledby="content-3__heading">
+            <h2 id="content-3__heading" class="content-3__title">MATCH TO EVERY OUTFIT</h2>
+            <div class="content-2__card-group">
+                <img src="src/asset/IMG_7751.JPG" alt="pikacu face" class="content-2__card-image">
+                <img src="src/asset/IMG_7751.JPG" alt="pikacu face" class="content-2__card-image">
+                <img src="src/asset/IMG_7751.JPG" alt="pikacu face" class="content-2__card-image">
             </div>
-            <p>This is the home section of the website. Here you can find a brief introduction and some welcoming words.
-            </p>
+        </section>
+        <section class="content-4" aria-labelledby="content-4__heading">
+            <h2 id="content-4__heading" class="content-4__title">SHOW US HOW YOU STYLE IT</h2>
+            <button class="content-4__button content-4__button--left"
+                aria-label="Watch video about outfits">WATCH</button>
+            <div class="content-2__card-group">
+                <img src="src/asset/IMG_7751.JPG" alt="pikacu face" class="content-2__card-image">
+                <img src="src/asset/IMG_7751.JPG" alt="pikacu face" class="content-2__card-image">
+                <img src="src/asset/IMG_7751.JPG" alt="pikacu face" class="content-2__card-image">
+            </div>
+            <p class="content-4__text">Women’s Kid’s Type</p>
+            <!-- <div class="content-4__actions">
+                <button class="content-4__button" aria-label="Watch video about outfits">WATCH</button>
+                <button class="content-4__button" aria-label="Shop for outfits now">SHOP NOW</button>
+                <button class="content-4__button" aria-label="Learn more about outfits">Learn More</button>
+                <button class="content-4__button" aria-label="Order outfits now">ORDER NOW</button>
+            </div> -->
+            <p class="content-4__text">Casual | Formal | Sport</p>
         </section>
 
-        <section id="about" class="about-section">
-            <h2>About Us</h2>
-            <p>Learn more about what we do and our mission.</p>
+        <section class="promo" aria-labelledby="promo__heading">
+            <h2 id="promo__heading" class="visually-hidden">Promotions</h2>
+            <p class="promo__text">YOUR FIRST ORDER &amp; GET EXCLUSIVE OFFERS</p>
+            <p class="promo__text">EARN 10% OFF</p>
+            <p class="promo__text">SEASON 1</p>
         </section>
-
-        <section id="services" class="services-section">
-            <h2>Our Services</h2>
-            <p>Explore the services we offer to our customers.</p>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us through the following contact methods.</p>
-        </section>
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <a href="#" class="footer__logo-link">LuxeTime</a>
+                </div>
+                <div class="footer__menu">
+                    <a href="#about" class="footer__menu-link">About Us</a>
+                    <a href="#contact" class="footer__menu-link">Contact</a>
+                    <a href="#privacy" class="footer__menu-link">Privacy Policy</a>
+                </div>
+                <div class="footer__social-media">
+                    <a href="#" class="footer__social-media-link">Facebook</a>
+                    <a href="#" class="footer__social-media-link">Twitter</a>
+                    <a href="#" class="footer__social-media-link">Instagram</a>
+                </div>
+            </div>
+        </footer>
     </main>
-    <footer class="footer">
-        <div class="footer-container">
-            <p>&copy; 2024 MySite. All rights reserved.</p>
-            <ul class="footer-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </footer>
-    <script type="module" src="/src/main.js"></script>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navbar__menu');
+            menu.classList.toggle('navbar__menu--active');
+        }
+    </script>
 </body>
 
 </html>
