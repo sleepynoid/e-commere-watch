@@ -1,0 +1,12 @@
+services:
+  nodejs:
+    build:
+      dockerfile: ./Dockerfile
+    # image: node:20-alpine
+    container_name: nodejs-custom
+    ports:
+      - "3000:3000"
+    mem_limit: 500M
+    volumes:
+      - ./:/project
+      - /project/node_modules
